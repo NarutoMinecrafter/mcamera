@@ -1,5 +1,5 @@
 server:
-  origin: "http://194.163.145.48:3003"
+  origin: http://194.163.145.48:3003"
 
 db:
   host: "postgres"
