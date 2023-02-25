@@ -42,13 +42,17 @@ async function bootstrap() {
     if (process.env.NODE_ENV === 'development') {
         // app.enableCors({origin: serverConfig.origin});
         app.enableCors({
-            origin: '*'
-        });
+            origin: '*', // Allow any origin
+            methods: 'GET,PUT,POST,DELETE,OPTIONS', // Allow only these methods
+            credentials: true, // Allow cookies and authorization headers with HTTPS
+          });
     } else {
         // app.enableCors({origin: serverConfig.origin});
         app.enableCors({
-            origin: '*'
-        });
+            origin: '*', // Allow any origin
+            methods: 'GET,PUT,POST,DELETE,OPTIONS', // Allow only these methods
+            credentials: true, // Allow cookies and authorization headers with HTTPS
+          });
         logger.log(`Accepting requests from origin "${serverConfig.origin}"`);
     }
 
