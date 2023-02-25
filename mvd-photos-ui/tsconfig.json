@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es2018",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "types": [
+      "jest",
+      "node",
+      "history",
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "webpack-env",
+      "react-redux"
+    ],
+    "paths": {
+      "components": ["src/app/components"],
+      "components/*": ["src/app/components/*"],
+      "containers": ["src/app/containers"],
+      "containers/*": ["src/app/containers/*"],
+      "enums": ["src/app/enums"],
+      "enums/*": ["src/app/enums/*"],
+      "helpers": ["src/app/helpers"],
+      "helpers/*": ["src/app/helpers/*"],
+      "rest": ["src/app/rest"],
+      "rest/*": ["src/app/rest/*"],
+      "locales": ["src/app/locales"],
+      "locales/*": ["src/app/locales/*"],
+      "openapi": ["generated-sources/openapi"],
+      "openapi/*": ["generated-sources/openapi/*"]
+    },
+    "outDir": "../src/main/resources/static"
+  },
+  "include": [
+    "src"
+  ]
+}

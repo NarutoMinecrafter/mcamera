@@ -1,0 +1,43 @@
+version: '3'
+services:
+ web:
+   build: ./mvd-photos-ui
+   restart: always
+   ports:
+     - "3003:3003"
+   volumes:
+     - .:/home/node/web-app
+   depends_on:
+     - server
+     - postgres
+   links:
+     - server
+     - postgres
+
+ server:
+   build: ./mvd-photos
+   restart: always
+   ports:
+     - "3000:3000"
+     - "3001:3001"
+     - "3002:3002"  
+   volumes:
+     - .:/home/node/server-app
+   depends_on:
+     - postgres
+
+ postgres:
+   restart: always
+   image: postgres:13
+   environment:
+     POSTGRES_PASSWORD: postgres
+     POSTGRES_USER: postgres
+     POSTGRES_DB: mvdphotos
+   volumes:
+     - dbdata:/data/db
+   ports:
+     - "5432"
+
+volumes:
+  dbdata:
+

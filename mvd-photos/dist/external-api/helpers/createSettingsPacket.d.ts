@@ -1,0 +1,3 @@
+import { Device } from '../../devices/device.entity';
+import { CreateDeviceDto } from '../../devices/dto/create-device.dto';
+export declare const createSettingsPacket: ({ identifier, name, scheduleFrequencyPhoto, scheduleDurationPhoto, scheduleFramesQuantity, movementCells, movementDiffLevel, movementChangeFrameTime, movementFrequencyAnalyzing, circleDurationBeforeMoveSensor, circleFramesQuantityBeforeMove, circleDurationDuringMoveSensor, circleFramesQuantityDuringMove, circleDurationAfterMoveSensor, circleFramesQuantityAfterMove, circleDurationDuringMoveSensorUnit, randomSymbols }: Device) => CreateDeviceDto;

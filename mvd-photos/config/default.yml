@@ -1,0 +1,12 @@
+server:
+  port: 3000
+  portMS: 3001
+  portTcp: 3002
+
+db:
+  type: 'postgres'
+  port: 5432
+  database: 'mvdphotos'
+
+jwt:
+  expiresIn: 360000

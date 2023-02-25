@@ -1,0 +1,11 @@
+db:
+  host: 'localhost'
+  username: 'postgres'
+  password: 'postgres'
+  synchronize: true
+
+server:
+  origin: 'http://143.198.130.72/:3003'
+
+jwt:
+  secret: 'topSecret17'
