@@ -1,4 +1,4 @@
-const DevPath = "localhost:3000/api";
+const DevPath = "194.163.145.48:3000/api";
 const ProdPath = "194.163.145.48:3000/api";
 
 export const getBasePath = () => {
