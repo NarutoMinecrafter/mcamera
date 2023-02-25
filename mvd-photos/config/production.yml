@@ -1,11 +1,11 @@
 server:
-  origin: 'http://143.198.130.72:3003'
+  origin: "http://194.163.145.48:3003"
 
 db:
-  host: 'postgres'
-  username: 'postgres'
-  password: 'postgres'
+  host: "postgres"
+  username: "postgres"
+  password: "postgres"
   synchronize: true
 
 jwt:
-  secret: 'topSecret17'
+  secret: "topSecret17"

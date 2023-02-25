@@ -1,1 +1,0 @@
-{"version":3,"file":"1601194850570-CreateAdmin.js","sourceRoot":"","sources":["../../src/migrations/1601194850570-CreateAdmin.ts"],"names":[],"mappings":";;;AAEA,MAAa,wBAAwB;IAE1B,KAAK,CAAC,EAAE,CAAC,WAAwB;QACpC,MAAM,WAAW,CAAC,KAAK,CACnB;;;;;;;;;aASC,CAAC,CAAC;IACX,CAAC;IAEM,KAAK,CAAC,IAAI,CAAC,WAAwB;IAC1C,CAAC;CAEJ;AAnBD,4DAmBC"}
